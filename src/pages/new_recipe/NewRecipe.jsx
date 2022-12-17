@@ -1,4 +1,5 @@
 import React from "react";
+import "./NewRecipe.css";
 
 const NewRecipe = () => {
   return (
