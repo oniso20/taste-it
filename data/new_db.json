@@ -592,67 +592,65 @@
       "id": 9
     },
     {
-      "recipe": {
-        "name": "American Pancakes",
-        "author": "John Doe",
-        "country": "United States",
-        "description": "Fluffy and delicious pancakes, a classic American breakfast favorite.",
-        "image": "https://glutenfreecuppatea.co.uk/wp-content/uploads/2021/02/gluten-free-american-pancakes-recipe.jpg",
-        "ingredients": [
-          {
-            "name": "all-purpose flour",
-            "quantity": 1.5,
-            "unit": "cups"
-          },
-          {
-            "name": "baking powder",
-            "quantity": 2,
-            "unit": "teaspoons"
-          },
-          {
-            "name": "sugar",
-            "quantity": 0.5,
-            "unit": "cups"
-          },
-          {
-            "name": "salt",
-            "quantity": 0.25,
-            "unit": "teaspoons"
-          },
-          {
-            "name": "milk",
-            "quantity": 1.5,
-            "unit": "cups"
-          },
-          {
-            "name": "vegetable oil",
-            "quantity": 3,
-            "unit": "tablespoons"
-          },
-          {
-            "name": "eggs",
-            "quantity": 2,
-            "unit": "whole"
-          }
-        ],
-        "preparation_time": "10 minutes",
-        "cooking_time": "15 minutes",
-        "servings": 4,
-        "directions": [
-          "In a large bowl, whisk together the flour, baking powder, sugar, and salt.",
-          "In a separate bowl, whisk together the milk, vegetable oil, and eggs.",
-          "Pour the wet ingredients into the dry ingredients and whisk until well combined.",
-          "Heat a large skillet over medium heat and lightly grease with cooking spray or butter.",
-          "Pour 1/4 cup of batter onto the skillet for each pancake. Cook until bubbles form on the surface, about 2 minutes.",
-          "Flip the pancakes and cook until golden brown on the other side, about 2 minutes more.",
-          "Serve the pancakes hot, with your choice of toppings, such as butter and maple syrup."
-        ],
-        "nutrition": {
-          "calories": 400,
-          "fat": 18,
-          "carbohydrates": 48,
-          "protein": 10
+      "name": "American Pancakes",
+      "author": "John Doe",
+      "country": "United States",
+      "description": "Fluffy and delicious pancakes, a classic American breakfast favorite.",
+      "image": "https://glutenfreecuppatea.co.uk/wp-content/uploads/2021/02/gluten-free-american-pancakes-recipe.jpg",
+      "ingredients": [
+        {
+          "name": "all-purpose flour",
+          "quantity": 1.5,
+          "unit": "cups"
+        },
+        {
+          "name": "baking powder",
+          "quantity": 2,
+          "unit": "teaspoons"
+        },
+        {
+          "name": "sugar",
+          "quantity": 0.5,
+          "unit": "cups"
+        },
+        {
+          "name": "salt",
+          "quantity": 0.25,
+          "unit": "teaspoons"
+        },
+        {
+          "name": "milk",
+          "quantity": 1.5,
+          "unit": "cups"
+        },
+        {
+          "name": "vegetable oil",
+          "quantity": 3,
+          "unit": "tablespoons"
+        },
+        {
+          "name": "eggs",
+          "quantity": 2,
+          "unit": "whole"
         }
+      ],
+      "preparation_time": "10 minutes",
+      "cooking_time": "15 minutes",
+      "servings": 4,
+      "directions": [
+        "In a large bowl, whisk together the flour, baking powder, sugar, and salt.",
+        "In a separate bowl, whisk together the milk, vegetable oil, and eggs.",
+        "Pour the wet ingredients into the dry ingredients and whisk until well combined.",
+        "Heat a large skillet over medium heat and lightly grease with cooking spray or butter.",
+        "Pour 1/4 cup of batter onto the skillet for each pancake. Cook until bubbles form on the surface, about 2 minutes.",
+        "Flip the pancakes and cook until golden brown on the other side, about 2 minutes more.",
+        "Serve the pancakes hot, with your choice of toppings, such as butter and maple syrup."
+      ],
+      "nutrition": {
+        "calories": 400,
+        "fat": 18,
+        "carbohydrates": 48,
+        "protein": 10
       },
       "id": 10
     },

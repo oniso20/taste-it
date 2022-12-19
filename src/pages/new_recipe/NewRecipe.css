@@ -1,0 +1,92 @@
+.new-recipe {
+    color: #555;
+    max-width: 480px;
+    margin: 60px auto;
+}
+
+form h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-recipe label span {
+    display: block;
+    margin: 30px 0 10px;
+}
+
+.new-recipe label {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.new-recipe .multi-input button {
+    display: block;
+    width: 10rem;
+    font-size: 1em;
+    color: #fff;
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #58249c;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px auto;
+}
+
+.multi-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.multi-input>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.multi-input .labels input {
+    width: 10px;
+}
+
+.new-recipe .submit-btn {
+    text-align: center;
+}
+
+.new-recipe .submit-btn button {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #57cc99;
+    background: #57cc99;
+}
+
+.new-recipe .submit-btn button:hover {
+    background: #fff;
+    color: #57cc99
+}
+
+.new-recipe .nutrients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-recipe .time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
