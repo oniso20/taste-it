@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { useFetch } from "../../hooks/useFetch";
+
+// styles
 import "./NewRecipe.css";
 
 const NewRecipe = () => {
@@ -20,6 +23,11 @@ const NewRecipe = () => {
     },
     ingredients: [],
   });
+
+  const { postData, data, error } = useFetch(
+    "http://localhost:3000/recipes",
+    "POST"
+  );
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -46,6 +54,7 @@ const NewRecipe = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // add recipe to database
+    postData(recipe);
   };
 
   return (
