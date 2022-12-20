@@ -36,7 +36,9 @@
     ]
   },
   "devDependencies": {
+    "axios": "^1.2.1",
     "json-server": "^0.17.1",
-    "react-router-dom": "^6.4.5"
+    "react-router-dom": "^6.4.5",
+    "react-select": "^5.7.0"
   }
 }

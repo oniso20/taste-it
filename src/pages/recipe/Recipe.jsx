@@ -13,6 +13,10 @@ const Recipe = () => {
     error,
   } = useFetch("http://localhost:3001/recipes/" + id);
 
+  const countryFlag = `https://restcountries.com/v3.1/name/${recipe?.country}?fullText=true`;
+  const { data: flag } = useFetch(countryFlag);
+  flag?.map(({ flags }) => console.log(flags.png));
+
   return (
     <div className="recipe">
       {error && <p className="error">{error}</p>}
@@ -21,6 +25,11 @@ const Recipe = () => {
         <>
           <h2 className="page-title">{recipe.name}</h2>
           <div className="top-content">
+            <img
+              className="flag"
+              src={flag?.map(({ flags }) => flags.png.replace(/,/g, "")) || ""}
+              alt=""
+            />
             <img className="image" src={recipe.image} alt={recipe.name} />
             <div className="text-content">
               <p>Preparation time: {recipe.preparation_time} minutes</p>

@@ -8,13 +8,19 @@ import RecipeCard from "../../components/recipe_card/RecipeCard";
 import "./Recipes.css";
 
 const Recipes = () => {
-  const { data, isPending, error } = useFetch("http://localhost:3001/recipes");
+  const {
+    data: recipe,
+    isPending,
+    error,
+  } = useFetch("http://localhost:3001/recipes");
+
+  const { data: flag } = useFetch(`https://restcountries.com/v3.1/all`);
 
   return (
     <div className="recipes">
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
-      {data && <RecipeCard recipes={data} />}
+      {recipe && <RecipeCard recipes={recipe} flag={flag} />}
     </div>
   );
 };

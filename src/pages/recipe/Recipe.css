@@ -8,6 +8,7 @@
 }
 
 .recipe .top-content {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,13 +17,23 @@
 }
 
 .recipe .top-content .image {
-    width: 40%;
+    width: 30%;
     height: 250px;
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 1rem;
-    border-radius: 50%;
+    border-radius: 5px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.recipe .top-content img.flag {
+    position: absolute;
+    top: -8px;
+    left: -14px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .recipe .top-content .text-content {

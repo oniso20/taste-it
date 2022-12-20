@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useFetch } from "../../hooks/useFetch";
+import axios from "axios";
+import Select from "react-select";
 
 // styles
 import "./NewRecipe.css";
@@ -28,6 +30,18 @@ const NewRecipe = () => {
     "http://localhost:3000/recipes",
     "POST"
   );
+
+  let options = [];
+
+  axios.get("https://restcountries.com/v3.1/all").then((response) => {
+    response.data.map((country) => {
+      options.push({ value: country.name.common, label: country.name.common });
+    });
+  });
+
+  function updateRecipe(newCountry) {
+    setRecipe({ ...recipe, country: newCountry });
+  }
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -82,12 +96,11 @@ const NewRecipe = () => {
         </label>
         <br />
         <label>
-          Country:
-          <input
-            type="text"
-            name="country"
+          Country name:
+          <Select
+            options={options}
             value={recipe.country}
-            onChange={handleInputChange}
+            onChange={updateRecipe}
           />
         </label>
         <br />
