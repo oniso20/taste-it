@@ -26,21 +26,18 @@ We also utilized the `restcountries` API to fetch the country flag and use it fo
 
 You can learn more about the API here: https://restcountries.com/
 
-The following modules were imported from react-router-dom:
-
-- `useNavigate`
-- `useParams`
-- `useLocation()`
-- `queryParams`
-- `URLSearchParams`
-
 ## Exciting recourse
 
 https://www.youtube.com/c/TheNetNinja/playlists
 
 ## Skills Learned
 
-While working on this project, we learned how to use fetch hooks and implement search functionality using `useNavigate`, `useParams`, and `query`.
+While working on this project, we learned how to use fetch hooks and implement search functionality using;
+
+- `useParams`
+- `useLocation()`
+- `queryParams`
+- `URLSearchParams`
 
 ## Available Scripts
 
