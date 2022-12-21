@@ -14,7 +14,6 @@
 }
 
 .description {
-    font-size: 16px;
     margin-bottom: 32px;
 }
 
@@ -22,42 +21,35 @@
     display: inline-block;
     padding: 8px 16px;
     border-radius: 4px;
-    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     margin-right: 16px;
 }
 
-/* Add a hover effect to the buttons */
 .btn:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: translateY(-2px);
 }
 
-/* Add a transition effect to the buttons */
 .btn {
     transition: all 0.3s ease;
 }
 
-/* Style the primary button */
 .btn-primary {
     background-color: #4caf50;
     color: white;
 }
 
-/* Style the secondary button */
 .btn-secondary {
     background-color: #ff9800;
     color: white;
 }
 
-/* Style the tertiary button */
 .btn-tertiary {
     background-color: #7f8c8d;
     color: white;
 }
 
-/* Add some padding and a border to the buttons */
 .btn {
     padding: 10px 20px;
     border: none;
@@ -65,7 +57,6 @@
     cursor: pointer;
 }
 
-/* Add some margin to the buttons */
 .btn {
     margin: 10px;
 }
@@ -81,11 +72,10 @@ video {
 .features {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
     justify-content: center;
     text-align: center;
-    width: 100vw;
     margin-bottom: 2rem;
 }
 
