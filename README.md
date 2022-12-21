@@ -30,7 +30,13 @@ The following modules were imported from react-router-dom:
 
 - `useNavigate`
 - `useParams`
-- `query`
+- `useLocation()`
+- `queryParams`
+- `URLSearchParams`
+
+## Exciting recourse
+
+https://www.youtube.com/c/TheNetNinja/playlists
 
 ## Skills Learned
 
