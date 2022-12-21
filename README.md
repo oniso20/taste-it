@@ -2,7 +2,7 @@
 
 Welcome to TasteIT, a web application where users can browse and contribute food recipes from around the world.
 
-![TasteIT Preview](../taste-it/src/assets/images/TasteIT.jpg)
+![TasteIT Preview](/src/assets/images/TasteIT.jpg)
 
 ## Features
 
