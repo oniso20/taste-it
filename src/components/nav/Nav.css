@@ -1,4 +1,7 @@
 .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #333333;
     padding: 20px;
     color: #fff;
@@ -6,15 +9,25 @@
 
 .nav-bar nav {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
 }
 
+
 .nav-bar a.logo {
-    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     color: #fff;
     text-decoration: none;
+}
+
+.nav-bar .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .nav-bar .nav-links a {

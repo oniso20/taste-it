@@ -1,5 +1,8 @@
 import React from "react";
+
+// hooks
 import { useFetch } from "../../hooks/useFetch";
+import useFlags from "../../hooks/useFlags";
 
 // components
 import RecipeCard from "../../components/recipe_card/RecipeCard";
@@ -8,19 +11,18 @@ import RecipeCard from "../../components/recipe_card/RecipeCard";
 import "./Recipes.css";
 
 const Recipes = () => {
+  const flags = useFlags();
   const {
     data: recipe,
     isPending,
     error,
   } = useFetch("http://localhost:3001/recipes");
 
-  const { data: flag } = useFetch(`https://restcountries.com/v3.1/all`);
-
   return (
     <div className="recipes">
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
-      {recipe && <RecipeCard recipes={recipe} flag={flag} />}
+      {recipe && <RecipeCard recipes={recipe} flags={flags} />}
     </div>
   );
 };

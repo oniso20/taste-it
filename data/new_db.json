@@ -1018,6 +1018,102 @@
         "protein": 36
       },
       "id": 15
+    },
+    {
+      "name": "Jellof Rice",
+      "author": "Onis Emem",
+      "cooking_time": "10",
+      "country": "Nigeria",
+      "description": "Although considerable variation exists, the basic profile for Nigerian jollof rice includes long-grain parboiled rice, tomatoes and tomato paste, pepper, vegetable oil, onions, and stock cubes. Most of the ingredients are cooked in one pot, of which a rich meat stock and a fried tomato and pepper puree characteristically forms the base. Rice is then added and left to cook in the liquid. The dish is then served with the protein of choice and very often with fried plantains, moi moi, steamed vegetables, coleslaw, salad, etc. In the riverine areas of Nigeria where seafood is the main source of protein, seafood often takes the place of chicken or meat as the protein of choice.",
+      "directions": [
+        "1. Blend your tomatoes, red pepper, scotch bonnet peppers in a food processor or blender for about 45 seconds, make sure that everything is blended well.",
+        "2. In a medium sized pot, heat your oil on medium-high heat. Once the oil is heated add the onions you set aside and fry just until they turn golden brown. Once the onions, have turned brown in color add the tomato paste and fry for 2-3 minutes. Then add the blended tomato mixture (reserve about 1/4 cup and set aside) and fry the mixture with the onions and tomato paste for about 30 minutes. Make sure you stir consistently so that the tomato mixture does not burn.",
+        "3. After 30 minutes, turn the heat down to medium, and add the chicken stock. Mix and add your seasonings (salt, curry powder, thyme, all purpose seasoning, and the Knorr stock cube). Continue to boil for 10 minutes.",
+        "4. Add the parboiled rice to the pot. Mix it very well with the tomato stew. At this point if you need to add water so that the rice is level with the tomato mixture/chicken stock go ahead and do so. Add the bay leaves, cover the pot, and cook on medium to low heat for 15-30 minutes.",
+        "5. When the liquid has almost dried up add the remaining tomato stew, cover, and let it cook for another 5-10 minutes heat until the liquid has completely dried up. Turn off the heat, mix thoroughly, and your Jollof Rice is ready to be eaten!"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Jollof_rice_with_fried_fish_and_plantains_garnished_with_cucumber_and_tomatoes.jpg/220px-Jollof_rice_with_fried_fish_and_plantains_garnished_with_cucumber_and_tomatoes.jpg",
+      "preparation_time": "15",
+      "nutrition": {
+        "calories": "2",
+        "fat": "4",
+        "protein": "4",
+        "servings": "4",
+        "carbohydrates": "8"
+      },
+      "ingredients": [
+        {
+          "name": "Onions",
+          "quantity": "1",
+          "unit": "Pieces"
+        },
+        {
+          "name": "Maggi",
+          "quantity": "4",
+          "unit": "Cubes"
+        },
+        {
+          "name": "Rice",
+          "quantity": "2",
+          "unit": "Cups"
+        },
+        {
+          "name": "Pepper",
+          "quantity": "5",
+          "unit": "Table spoons"
+        }
+      ],
+      "id": 16
+    },
+    {
+      "name": "Porridge Beans",
+      "author": "Queen Charles",
+      "cooking_time": "",
+      "country": {
+        "value": "Ghana",
+        "label": "Ghana"
+      },
+      "description": "Porridge bean is a delicious one-pot Ghanian delicacy that is easy to prepare but yields a rich flavor. This is truly the best-stewed beans recipe that you will ever taste. Plus it’s incredibly economical.",
+      "directions": [],
+      "image": "https://cheflolaskitchen.com/wp-content/uploads/2017/01/DSC0246-Ewa-riro-pictures-ewa-riro.jpg.webp",
+      "preparation_time": "",
+      "nutrition": {
+        "calories": "",
+        "fat": "",
+        "protein": "",
+        "servings": "",
+        "carbohydrates": ""
+      },
+      "ingredients": [],
+      "id": 17
+    },
+    {
+      "name": "rrtttyy",
+      "author": "Santosh",
+      "cooking_time": "12",
+      "country": "Argentina",
+      "description": "lkskkddldkdfjfjfjfdmdmfmd",
+      "directions": [
+        "1. just cook",
+        "2. cook again"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Jollof_rice_with_fried_fish_and_plantains_garnished_with_cucumber_and_tomatoes.jpg/220px-Jollof_rice_with_fried_fish_and_plantains_garnished_with_cucumber_and_tomatoes.jpg",
+      "preparation_time": "23",
+      "nutrition": {
+        "calories": "2",
+        "fat": "2",
+        "protein": "2",
+        "servings": "2",
+        "carbohydrates": "2"
+      },
+      "ingredients": [
+        {
+          "name": "Suger",
+          "quantity": "2",
+          "unit": "Cubes"
+        }
+      ],
+      "id": 18
     }
   ]
 }

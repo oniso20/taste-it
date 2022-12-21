@@ -1,7 +1,10 @@
-import React, { useState } from "react";
-import { useFetch } from "../../hooks/useFetch";
-import axios from "axios";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Select from "react-select";
+import axios from "axios";
+
+// hooks
+import { useFetch } from "../../hooks/useFetch";
 
 // styles
 import "./NewRecipe.css";
@@ -26,8 +29,10 @@ const NewRecipe = () => {
     ingredients: [],
   });
 
+  const navigate = useNavigate();
+
   const { postData, data, error } = useFetch(
-    "http://localhost:3000/recipes",
+    "http://localhost:3001/recipes",
     "POST"
   );
 
@@ -40,7 +45,7 @@ const NewRecipe = () => {
   });
 
   function updateRecipe(newCountry) {
-    setRecipe({ ...recipe, country: newCountry });
+    setRecipe({ ...recipe, country: newCountry.value });
   }
 
   const handleInputChange = (event) => {
@@ -71,6 +76,13 @@ const NewRecipe = () => {
     postData(recipe);
   };
 
+  // redirect the user when we get data response
+  useEffect(() => {
+    if (data) {
+      navigate("/");
+    }
+  }, [data, navigate]);
+
   return (
     <div className="new-recipe">
       <h2 className="page-title">Add a New Recipe</h2>
@@ -98,8 +110,9 @@ const NewRecipe = () => {
         <label>
           Country name:
           <Select
+            required={true}
             options={options}
-            value={recipe.country}
+            value={recipe.country.value}
             onChange={updateRecipe}
           />
         </label>

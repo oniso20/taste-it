@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 // styles
 import "./RecipeCard.css";
 
-export default function RecipeList({ recipes, flag: flags }) {
+const RecipeCard = ({ recipes, flags = [] }) => {
+  if (recipes.length === 0) {
+    return <div className="error">No recipes found...</div>;
+  }
+
   return (
     <div className="recipe-card">
       {recipes.map((recipe) => (
@@ -26,4 +30,6 @@ export default function RecipeList({ recipes, flag: flags }) {
       ))}
     </div>
   );
-}
+};
+
+export default RecipeCard;

@@ -1,6 +1,6 @@
 .recipe {
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 40px auto 40px auto;
     text-align: center;
     background: #fff;
     padding: 40px;
@@ -41,11 +41,48 @@
     text-align: left;
 }
 
-.recipe ul {
+
+.info {
     display: flex;
-    padding: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.info .ingredients-info {
+    display: flex;
     justify-content: center;
-    margin-top: 0;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 1rem;
+    text-align: left;
+    border: 1px solid #ccc;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.info .directions-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 1rem;
+    text-align: left;
+    border: 1px solid #ccc;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
 .recipe ul li {
@@ -55,28 +92,23 @@
 
 .recipe ul.ingredients {
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
-    border: 1px solid #d4d4d4;
     padding: 1rem 1rem 1rem 2.5em;
-    background-color: beige;
     margin-top: 0;
 }
 
 .recipe ul.ingredients li {
-    list-style: number;
+    list-style: disc;
     margin-right: 10px;
-    text-align: left;
     color: #777;
 }
 
 .recipe ul.directions {
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    border: 1px solid #d4d4d4;
     padding: 1rem 1rem 1rem 2.5em;
-    background-color: beige;
     margin-top: 0;
 }
 
@@ -85,29 +117,4 @@
     margin-right: 10px;
     text-align: left;
     color: #777;
-}
-
-.description {
-    text-align: left;
-    line-height: 1.5em;
-}
-
-.info {
-    display: flex;
-    height: fit-content;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-}
-
-.info .ingredients-info {
-    width: 40%;
-    height: 100%;
-    text-align: left;
-}
-
-.info .directions-info {
-    width: 60%;
-    height: 100%;
-    text-align: left;
 }

@@ -1,5 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+
+// hooks
 import { useFetch } from "../../hooks/useFetch";
 
 // styles
