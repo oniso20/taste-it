@@ -32,7 +32,7 @@ https://www.youtube.com/c/TheNetNinja/playlists
 
 ## Skills Learned
 
-While working on this project, we learned how to use fetch hooks and implement search functionality using;
+While working on this project, I learned how to create and use my own custom fetch hooks and implement the search functionality using;
 
 - `useParams`
 - `useLocation()`
