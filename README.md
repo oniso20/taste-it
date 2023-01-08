@@ -19,7 +19,6 @@ TasteIT was built using the following technologies:
 - React
 - HTML
 - CSS
-- JSX
 - JavaScript
 
 We also utilized the `restcountries` API to fetch the country flag and use it for the country selection option when creating a new recipe.
@@ -54,6 +53,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm run server`
+
+Runs the server using json-server for now
+Open [http://localhost:3001/recipes](http://localhost:3001/recipes) to view it in your browser.
 
 ### `npm run eject`
 
