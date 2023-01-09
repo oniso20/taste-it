@@ -31,16 +31,16 @@ const NewRecipe = () => {
 
   const navigate = useNavigate();
 
-  const { postData, data, error } = useFetch(
-    "http://localhost:3001/recipes",
-    "POST"
-  );
+  const { postData, data } = useFetch("http://localhost:3001/recipes", "POST");
 
   let options = [];
 
   axios.get("https://restcountries.com/v3.1/all").then((response) => {
     response.data.map((country) => {
-      options.push({ value: country.name.common, label: country.name.common });
+      return options.push({
+        value: country.name.common,
+        label: country.name.common,
+      });
     });
   });
 

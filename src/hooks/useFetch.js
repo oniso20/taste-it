@@ -6,13 +6,13 @@ export const useFetch = (url, method = "GET") => {
     const [error, setError] = useState(null);
     const [options, setOptions] = useState(null);
 
-    const postData = (postData) => {
+    const postData = (data) => {
         setOptions({
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(postData)
+            body: JSON.stringify(data)
         });
     };
 
@@ -27,14 +27,13 @@ export const useFetch = (url, method = "GET") => {
                 if (!res.ok) {
                     throw new Error(res.statusText);
                 }
-                const data = await res.json();
+                const fetchedData = await res.json();
 
                 setIsPending(false);
-                setData(data);
+                setData(fetchedData);
                 setError(null);
             } catch (err) {
                 if (err.name === "AbortError") {
-                    console.log("the fetch was aborted");
                 } else {
                     setIsPending(false);
                     setError('Could not fetch the data');

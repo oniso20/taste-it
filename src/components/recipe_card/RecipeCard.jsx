@@ -20,6 +20,7 @@ const RecipeCard = ({ recipes, flags = [] }) => {
                 ?.find((flag) => flag.name.common === recipe.country)
                 ?.flags.png.replace(/,/g, "") || ""
             }
+            alt={recipe.country}
           />
 
           <p>{recipe.preparation_time} minutes to make.</p>

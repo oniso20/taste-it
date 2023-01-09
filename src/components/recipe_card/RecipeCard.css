@@ -14,7 +14,6 @@
     border-radius: 4px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-    position: relative;
 }
 
 .recipe-card .card:hover {
@@ -44,7 +43,6 @@
     display: block;
     background: #e2e2e2;
     font-size: 0.9em;
-    width: 100px;
     text-align: center;
     width: 120px;
     padding: 8px;
