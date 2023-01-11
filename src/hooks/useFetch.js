@@ -33,12 +33,11 @@ export const useFetch = (url, method = "GET") => {
                 setData(fetchedData);
                 setError(null);
             } catch (err) {
-                if (err.name === "AbortError") {
-                } else {
-                    setIsPending(false);
-                    setError('Could not fetch the data');
-                }
-            }
+                setIsPending(false);
+                setError('Could not fetch the data');
+
+            };
+
         };
 
         // invoke the function

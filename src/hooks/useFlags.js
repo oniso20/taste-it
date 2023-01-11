@@ -8,9 +8,6 @@ const useFlags = () => {
             .then((response) => response.json())
             .then((data) => {
                 setFlags(data);
-            })
-            .catch((error) => {
-                console.error(error);
             });
     }, []);
 

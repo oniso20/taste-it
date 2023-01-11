@@ -17,7 +17,6 @@ const Recipe = () => {
 
   const countryFlag = `https://restcountries.com/v3.1/name/${recipe?.country}?fullText=true`;
   const { data: flag } = useFetch(countryFlag);
-  flag?.map(({ flags }) => console.log(flags.png));
 
   return (
     <div className="cover">
