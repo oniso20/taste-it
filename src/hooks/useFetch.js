@@ -1,58 +1,57 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export const useFetch = (url, method = "GET") => {
-    const [data, setData] = useState(null);
-    const [isPending, setIsPending] = useState(false);
-    const [error, setError] = useState(null);
-    const [options, setOptions] = useState(null);
+  const [data, setData] = useState(null);
+  const [isPending, setIsPending] = useState(false);
+  const [error, setError] = useState(null);
 
-    const postData = (data) => {
-        setOptions({
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
+  const fetchData = useCallback(
+    async (fetchOptions) => {
+      setIsPending(true);
+
+      try {
+        const res = await fetch(url, fetchOptions);
+        if (!res.ok) {
+          throw new Error(res.statusText);
+        }
+        const fetchedData = await res.json();
+
+        setIsPending(false);
+        setData(fetchedData);
+        setError(null);
+      } catch (err) {
+        setIsPending(false);
+        if (err.name !== "AbortError") {
+          setError("Could not fetch the data");
+        }
+      }
+    },
+    [url]
+  );
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    if (method === "GET") {
+      fetchData({ signal: controller.signal });
+    }
+
+    return () => {
+      controller.abort();
+    };
+  }, [fetchData, method]);
+
+  const postData = async (data) => {
+    const fetchOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
     };
 
-    useEffect(() => {
-        const controller = new AbortController();
+    await fetchData(fetchOptions);
+  };
 
-        const fetchData = async (fetchOptions) => {
-            setIsPending(true);
-
-            try {
-                const res = await fetch(url, { ...fetchOptions, signal: controller.signal });
-                if (!res.ok) {
-                    throw new Error(res.statusText);
-                }
-                const fetchedData = await res.json();
-
-                setIsPending(false);
-                setData(fetchedData);
-                setError(null);
-            } catch (err) {
-                setIsPending(false);
-                setError('Could not fetch the data');
-
-            };
-
-        };
-
-        // invoke the function
-        if (method === "GET") {
-            fetchData();
-        }
-        if (method === "POST" && options) {
-            fetchData(options);
-        }
-
-        return () => {
-            controller.abort();
-        };
-
-    }, [url, method, options]);
-
-    return { data, isPending, error, postData };
+  return { data, isPending, error, postData };
 };
